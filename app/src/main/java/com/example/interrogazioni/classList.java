@@ -35,7 +35,7 @@ public class classList extends AppCompatActivity {
     };
 
     public void getApiRequest() throws IOException {
-        URL
+        URL.
 
     }
 
