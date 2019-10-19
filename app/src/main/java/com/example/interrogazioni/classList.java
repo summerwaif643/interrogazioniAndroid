@@ -6,11 +6,18 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.interrogazioni.RandomJSONRPC.src.org.random.api.RandomOrgClient;
+
+import java.io.OutputStream;
+import java.net.URL;
+
 import java.io.IOException;
+import java.net.HttpURLConnection;
 
 public class classList extends AppCompatActivity {
     public String apiKey = "5d791e81-19bb-44fa-9d6d-d69df878f29a";
     public ListView listView =  (ListView) findViewById(R.id.studentList);
+    public String apiUrl = "https://api.random.org/json-rpc/2/invoke";
 
     public String[] studenti = {
             "Capasso Manuele",
@@ -34,18 +41,13 @@ public class classList extends AppCompatActivity {
             "Vollono Bruno"
     };
 
-    public void getApiRequest() throws IOException {
-        URL.
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class_list);
 
-        ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, );
     }
+
 
 
 

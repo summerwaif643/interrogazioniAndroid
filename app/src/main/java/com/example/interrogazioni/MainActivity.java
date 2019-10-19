@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.interrogazioni.RandomJSONRPC.src.org.random.api.*;
+
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     int[] arrayInterrogati = new int[19];
+    public String apiKey = "5d791e81-19bb-44fa-9d6d-d69df878f29a";
 
 
     @Override
@@ -31,25 +34,11 @@ public class MainActivity extends AppCompatActivity {
         stringN = Integer.toString(n);
         nInterrogato.setText(stringN);
 
-
-        /*
-        public void incrementa(View view) {
-        SharedPreferences prefs;
-        prefs = getSharedPreferences("com.example.schoolprojects", MODE_PRIVATE);
-
-        TextView add = (TextView) findViewById(R.id.show_count);
-
-        int clicks = (prefs.getInt("contatore", 0)) + 1;
-        prefs.edit().putInt("contatore", clicks).apply();
-
-        String stringClicks = Integer.toString(clicks);
-        add.setText(stringClicks);
-
-    }
-
-         */
-
         interrogato.nextInt(19);
+
+        RandomOrgClient client = RandomOrgClient.getRandomOrgClient(apiKey);
+
+        client.generateIntegers(19, 1, 19);
 
 
     }
