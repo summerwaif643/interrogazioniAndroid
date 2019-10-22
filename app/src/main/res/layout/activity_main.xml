@@ -23,16 +23,17 @@
 
     <TextView
         android:id="@+id/numberToInterrogate"
-        android:layout_width="67dp"
-        android:layout_height="120dp"
+        android:layout_width="352dp"
+        android:layout_height="293dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:textSize="100sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
+        app:layout_constraintVertical_bias="0.654"
         tools:text="2" />
 
     <TextView
@@ -54,9 +55,14 @@
         android:id="@+id/resetInterrogati"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:text="Reset"
+        android:onClick="interrogatoRst"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>
